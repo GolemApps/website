@@ -234,7 +234,7 @@ const PrivacyPolicy: React.FC = () => {
 					Provider will retain Automatically Collected information for up to 24
 					months and thereafter may store it in aggregate. If you'd like the
 					Service Provider to delete User Provided Data that you have provided
-					via the Application, please contact them at golemapps.main@gmail.com
+					via the Application, please contact them at utilitysoftlabs@gmail.com
 					and we will respond in a reasonable time. Please note that some or all
 					of the User Provided Data may be required in order for the Application
 					to function properly.
@@ -254,7 +254,7 @@ const PrivacyPolicy: React.FC = () => {
 					information, the Service Provider will immediately delete this from
 					their servers. If you are a parent or guardian and you are aware that
 					your child has provided us with personal information, please contact
-					the Service Provider (golemapps.main@gmail.com) so that they will be
+					the Service Provider (utilitysoftlabs@gmail.com) so that they will be
 					able to take the necessary actions.
 				</p>
 				<p>
@@ -299,7 +299,7 @@ const PrivacyPolicy: React.FC = () => {
 				<p>
 					If you have any questions regarding privacy while using the
 					Application, or have questions about the practices, please contact the
-					Service Provider via email at golemapps.main@gmail.com.
+					Service Provider via email at utilitysoftlabs@gmail.com.
 				</p>
 			</Container>
 		</>

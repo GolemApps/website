@@ -225,7 +225,7 @@ const Terms: React.FC = () => {
 					<p>
 						If you have any questions or suggestions about the Terms and
 						Conditions, please do not hesitate to contact the Service Provider
-						at golemapps.main@gmail.com.
+						at utilitysoftlabs@gmail.com.
 					</p>
 				</div>
 			</Container>
