@@ -16,7 +16,7 @@ const Terms: React.FC = () => {
 						<strong>Terms &amp; Conditions</strong>
 					</p>
 					<p>
-						These terms and conditions applies to the Card Wallet app (hereby
+						These terms and conditions applies to the Cards Wallet app (hereby
 						referred to as "Application") for mobile devices that was created by
 						UtilitySoft Labs (hereby referred to as "Service Provider") as an Ad
 						Supported service.

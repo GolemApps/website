@@ -69,7 +69,7 @@ const AboutSection: React.FC = () => {
 
 				<div className="explore-more">
 					<a
-						href="https://play.google.com/store/apps/dev?id=6447182245874050536"
+						href="https://play.google.com/store/apps/dev?id=8818860993188601793"
 						className="explore-link"
 						target="blank"
 					>

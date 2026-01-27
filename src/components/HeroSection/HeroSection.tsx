@@ -1,20 +1,10 @@
 import React from "react";
 import "./HeroSection.css";
-import utilitysoft_labs_icon from "/utilitysoft_labs_icon.png";
 import PhoneScanAnimation from "../../components/PhoneScanAnimation/PhoneScanAnimation";
 
 const HeroSection: React.FC = () => {
 	return (
 		<section className="hero">
-			<div className="hero-brand">
-				<img
-					src={utilitysoft_labs_icon}
-					alt="UtilitySoft Labs logo"
-					className="brand-logo"
-				/>
-				<h2>UtilitySoft Labs</h2>
-			</div>
-
 			<div className="hero-container">
 				<div className="hero-text">
 					<h1>

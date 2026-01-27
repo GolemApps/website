@@ -9,6 +9,7 @@ import { ThemeProvider, CssBaseline } from "@mui/material";
 // Battery Health And Alarm
 import BatteryPrivacyPolicy from "./pages/BatteryHealthAndAlarm/PrivacyPolicy";
 import BatteryTerms from "./pages/BatteryHealthAndAlarm/Terms";
+import BatteryHealthPage from "./pages/BatteryHealthAndAlarm/BatteryHealthPage";
 
 // Recover Deleted Messages
 import RecoverPrivacyPolicy from "./pages/RecoverDeletedMessages/PrivacyPolicy";
@@ -18,7 +19,7 @@ import RecoverTerms from "./pages/RecoverDeletedMessages/Terms";
 import ScreenshotPrivacyPolicy from "./pages/ScreenshotPro/PrivacyPolicy";
 import ScreenshotTerms from "./pages/ScreenshotPro/Terms";
 
-// Card Wallet
+// Cards Wallet
 import CardWalletPrivacyPolicy from "./pages/CardWallet/PrivacyPolicy";
 import CardWalletTerms from "./pages/CardWallet/Terms";
 
@@ -29,6 +30,8 @@ import QrScannerTerms from "./pages/QrScanner/Terms";
 // Barcode
 import BarcodePrivacyPolicy from "./pages/Barcode/PrivacyPolicy";
 import BarcodeTerms from "./pages/Barcode/Terms";
+import CardsWalletPage from "./pages/CardWallet/CardsWalletPage";
+import Header from "./components/Header/Header";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
 	<React.StrictMode>
@@ -36,10 +39,15 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 			<ThemeProvider theme={theme}>
 				<CssBaseline />
 				<BrowserRouter>
+					<Header />
 					<Routes>
 						<Route path="/" element={<Home />} />
 
 						{/* Battery Health & Alarm */}
+						<Route
+							path="/battery-health-and-alarm"
+							element={<BatteryHealthPage />}
+						/>
 						<Route
 							path="/battery-health-and-alarm/privacy-policy"
 							element={<BatteryPrivacyPolicy />}
@@ -69,12 +77,13 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 							element={<ScreenshotTerms />}
 						/>
 
-						{/* Card Wallet */}
+						{/* Cards Wallet */}
+						<Route path="/cards-wallet" element={<CardsWalletPage />} />
 						<Route
-							path="/card-wallet/privacy-policy"
+							path="/cards-wallet/privacy-policy"
 							element={<CardWalletPrivacyPolicy />}
 						/>
-						<Route path="/card-wallet/terms" element={<CardWalletTerms />} />
+						<Route path="/cards-wallet/terms" element={<CardWalletTerms />} />
 
 						{/* QR scanner & Barcode reader */}
 						<Route
@@ -93,5 +102,5 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 				</BrowserRouter>
 			</ThemeProvider>
 		</HelmetProvider>
-	</React.StrictMode>
+	</React.StrictMode>,
 );
