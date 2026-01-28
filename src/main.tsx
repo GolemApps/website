@@ -36,6 +36,7 @@ import QrScannerPage from "./pages/QrScanner/QrScannerPage";
 import ScreenshotProPage from "./pages/ScreenshotPro/ScreenshotProPage";
 import QrBarcodeScannerPage from "./pages/Barcode/QrBarcodeScannerPage";
 import WamrPage from "./pages/RecoverDeletedMessages/WamrPage";
+import ScrollToTop from "./utils/ScrollToTop";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
 	<React.StrictMode>
@@ -43,8 +44,8 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 			<ThemeProvider theme={theme}>
 				<CssBaseline />
 				<BrowserRouter>
+					<ScrollToTop />
 					<Header />
-					{/* <Toolbar /> */}
 					<Routes>
 						<Route path="/" element={<Home />} />
 
