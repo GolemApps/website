@@ -1,0 +1,78 @@
+.section {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.sectionTitle {
+	font-weight: 600 !important;
+	margin-bottom: 20px !important;
+}
+
+.sectionText {
+	color: #444;
+	line-height: 1.7;
+}
+
+.featuresGrid {
+	margin-top: 20px;
+}
+
+.featureCard {
+	border: 1px solid #e0e0e0;
+	border-radius: 12px;
+	padding: 20px;
+	height: 100%;
+	background-color: #fff;
+	transition: box-shadow 0.3s ease;
+}
+
+.featureCard:hover {
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+.featureTitle {
+	font-weight: 600;
+	margin-bottom: 8px;
+}
+
+.featureDesc {
+	color: #555;
+	font-size: 15px;
+}
+
+.faqList {
+	list-style: none;
+	padding: 0;
+}
+
+.faqList li {
+	margin-bottom: 18px;
+}
+
+.faqList strong {
+	display: block;
+	font-weight: 600;
+	color: #333;
+	margin-bottom: 4px;
+}
+
+.footerLinks {
+	padding: 40px 0;
+	color: #666;
+	text-align: center;
+}
+
+.legalLinks {
+	padding-top: 40px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.legalLink {
+	color: #2e7d32;
+	text-decoration: none;
+}
+
+.legalLink:hover {
+	text-decoration: underline;
+}

@@ -32,6 +32,10 @@ import BarcodePrivacyPolicy from "./pages/Barcode/PrivacyPolicy";
 import BarcodeTerms from "./pages/Barcode/Terms";
 import CardsWalletPage from "./pages/CardWallet/CardsWalletPage";
 import Header from "./components/Header/Header";
+import QrScannerPage from "./pages/QrScanner/QrScannerPage";
+import ScreenshotProPage from "./pages/ScreenshotPro/ScreenshotProPage";
+import QrBarcodeScannerPage from "./pages/Barcode/QrBarcodeScannerPage";
+import WamrPage from "./pages/RecoverDeletedMessages/WamrPage";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
 	<React.StrictMode>
@@ -40,6 +44,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 				<CssBaseline />
 				<BrowserRouter>
 					<Header />
+					{/* <Toolbar /> */}
 					<Routes>
 						<Route path="/" element={<Home />} />
 
@@ -58,6 +63,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 						/>
 
 						{/* Recover Deleted Messages */}
+						<Route path="/recover-deleted-messages" element={<WamrPage />} />
 						<Route
 							path="/recover-deleted-messages/privacy-policy"
 							element={<RecoverPrivacyPolicy />}
@@ -68,6 +74,12 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 						/>
 
 						{/* Screenshot Pro */}
+
+						<Route
+							path="/screenshot-pro-capture-edit"
+							element={<ScreenshotProPage />}
+						/>
+
 						<Route
 							path="/screenshot-pro-capture-edit/privacy-policy"
 							element={<ScreenshotPrivacyPolicy />}
@@ -85,7 +97,8 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 						/>
 						<Route path="/cards-wallet/terms" element={<CardWalletTerms />} />
 
-						{/* QR scanner & Barcode reader */}
+						{/* QR Scanner from Image */}
+						<Route path="/qr-scanner" element={<QrScannerPage />} />
 						<Route
 							path="/qr-scanner/privacy-policy"
 							element={<QrScannerPrivacyPolicy />}
@@ -93,6 +106,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 						<Route path="/qr-scanner/terms" element={<QrScannerTerms />} />
 
 						{/* Barcode */}
+						<Route path="/barcode" element={<QrBarcodeScannerPage />} />
 						<Route
 							path="/barcode/privacy-policy"
 							element={<BarcodePrivacyPolicy />}

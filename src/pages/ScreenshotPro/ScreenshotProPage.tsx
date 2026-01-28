@@ -1,24 +1,24 @@
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import { Button, Container, Grid, Typography, Box } from "@mui/material";
-import CreditCardIcon from "@mui/icons-material/CreditCard";
-import styles from "./CardsWalletPage.module.css";
+import ScreenshotMonitorIcon from "@mui/icons-material/ScreenshotMonitor";
+import styles from "./ScreenshotProPage.module.css";
 
-export default function CardsWalletPage() {
+export default function ScreenshotProPage() {
 	return (
 		<>
 			<Helmet>
-				<title>Cards – Mobile Wallet — UtilitySoft Labs</title>
+				<title>Screenshot & Scrolling Capture — UtilitySoft Labs</title>
 				<meta
 					name="description"
-					content="Digital wallet app to store and organize your loyalty, club, and membership cards securely. Replace plastic with Cards – Mobile Wallet by UtilitySoft Labs."
+					content="Powerful screenshot and scrolling capture tool for Android. Capture, edit, and share with ease using Screenshot & Scrolling Capture by UtilitySoft Labs."
 				/>
 			</Helmet>
 
 			{/* HERO SECTION */}
 			<Box
 				sx={{
-					background: "linear-gradient(120deg, #b2ffd2 0%, #c2e9fb 100%)",
+					background: "linear-gradient(120deg, #ffd69a 0%, #f1b966 100%)",
 					py: { xs: 8, md: 10 },
 					textAlign: "center",
 				}}
@@ -36,10 +36,10 @@ export default function CardsWalletPage() {
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.8 }}
 					>
-						<CreditCardIcon
+						<ScreenshotMonitorIcon
 							sx={{
 								fontSize: 80,
-								color: "#1976d2",
+								color: "#f57c00",
 								mb: 2,
 							}}
 						/>
@@ -52,7 +52,7 @@ export default function CardsWalletPage() {
 								fontFamily: "Poppins, sans-serif",
 							}}
 						>
-							Cards – Mobile Wallet
+							Screenshot & Scrolling Capture
 						</Typography>
 
 						<Typography
@@ -68,9 +68,9 @@ export default function CardsWalletPage() {
 								fontSize: "1.25rem",
 							}}
 						>
-							Your secure digital wallet for loyalty, club, and membership
-							cards. Replace plastic with convenience — scan, store, and access
-							all your cards anytime on your Android device.
+							Capture anything on your screen — full page, app view, or
+							scrolling content. Instantly edit, crop, and share screenshots
+							with Screenshot & Scrolling Capture by UtilitySoft Labs.
 						</Typography>
 
 						<Box
@@ -83,15 +83,15 @@ export default function CardsWalletPage() {
 						>
 							<Button
 								variant="contained"
-								color="primary"
-								href="https://play.google.com/store/apps/details?id=com.golemapps.cardwallet"
+								color="warning"
+								href="https://play.google.com/store/apps/details?id=com.golemapps.screenshotLite"
 								target="_blank"
 							>
 								Download on Google Play
 							</Button>
 							<Button
 								variant="outlined"
-								color="primary"
+								color="warning"
 								href="https://play.google.com/store/apps/dev?id=8818860993188601793"
 								target="_blank"
 							>
@@ -106,18 +106,18 @@ export default function CardsWalletPage() {
 								color: "#555",
 								fontSize: 13,
 								"& a": {
-									color: "#1976d2",
+									color: "#f57c00",
 									textDecoration: "none",
 									transition: "color 0.2s ease",
 								},
 								"& a:hover": {
 									textDecoration: "underline",
-									color: "#0d47a1",
+									color: "#e65100",
 								},
 							}}
 						>
 							<a
-								href="/cards-wallet/terms"
+								href="/screenshot-pro-capture-edit/terms"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
@@ -125,7 +125,7 @@ export default function CardsWalletPage() {
 							</a>{" "}
 							&nbsp;|&nbsp;{" "}
 							<a
-								href="/cards-wallet/privacy-policy"
+								href="/screenshot-pro-capture-edit/privacy-policy"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
@@ -142,14 +142,14 @@ export default function CardsWalletPage() {
 					Overview
 				</Typography>
 				<Typography className={styles.sectionText}>
-					Cards – Mobile Wallet lets you store, organize, and access all your
-					loyalty, club, and membership cards in one clean, lightweight app.
-					Simply scan the barcode or enter card details — your wallet is now
-					digital.<br></br>
-					<br></br>
-					Built with privacy and simplicity in mind, it works fully offline, so
-					your data never leaves your device. The perfect solution for people
-					who value minimalism, security, and everyday convenience.
+					Screenshot & Scrolling Capture is your all-in-one tool for capturing,
+					editing, and sharing screenshots. Easily take scrolling captures of
+					web pages, chats, or documents — no stitching required.
+					<br />
+					<br />
+					With built-in editing, annotation, and crop tools, you can refine your
+					screenshots before saving or sharing. Perfect for work, study, or
+					everyday use.
 				</Typography>
 			</Container>
 
@@ -162,28 +162,28 @@ export default function CardsWalletPage() {
 				<Grid container spacing={3} className={styles.featuresGrid}>
 					{[
 						{
-							title: "Store All Your Cards",
-							desc: "Add loyalty, membership, or gift cards in seconds with barcode or manual entry.",
+							title: "Scrolling Capture",
+							desc: "Capture entire pages and chats automatically — no manual stitching.",
 						},
 						{
-							title: "Barcode & QR Display",
-							desc: "Show any barcode directly from your screen for easy scanning in stores.",
+							title: "Instant Editing",
+							desc: "Crop, draw, blur, and annotate directly after taking a screenshot.",
 						},
 						{
-							title: "Offline Access",
-							desc: "Access all cards anytime — even without internet connection.",
+							title: "Floating Capture Button",
+							desc: "One-tap capture from any screen or app.",
 						},
 						{
-							title: "Secure Local Storage",
-							desc: "All data stays encrypted and private on your device — not in the cloud.",
+							title: "Auto-Save & History",
+							desc: "Keep your captures organized with quick access to recent screenshots.",
 						},
 						{
-							title: "Customizable Look",
-							desc: "Personalize card colors, icons, and backgrounds to match your style.",
+							title: "Lightweight & Fast",
+							desc: "Optimized for smooth performance and minimal battery use.",
 						},
 						{
-							title: "Backup & Restore",
-							desc: "Easily export or restore your cards when switching devices.",
+							title: "Share Instantly",
+							desc: "Send your screenshots via any app or cloud service in one tap.",
 						},
 					].map((f, i) => (
 						<Grid item xs={12} sm={6} md={4} key={i}>
@@ -208,13 +208,14 @@ export default function CardsWalletPage() {
 					Why It Matters
 				</Typography>
 				<Typography className={styles.sectionText}>
-					Carrying dozens of plastic cards is outdated. Cards – Mobile Wallet
-					simplifies your life by putting everything in one secure, digital
-					place.<br></br>
-					<br></br>
-					Enjoy a clutter-free experience at checkout, faster access to your
-					memberships, and peace of mind knowing your information is stored
-					locally — safe, simple, and always with you.
+					Taking and editing screenshots should be effortless. Screenshot &
+					Scrolling Capture simplifies your workflow — from capturing to
+					sharing, all in seconds.
+					<br />
+					<br />
+					Designed with usability and speed in mind, it helps you stay focused
+					on what matters — whether you're documenting, teaching, or
+					collaborating.
 				</Typography>
 			</Container>
 
@@ -225,24 +226,30 @@ export default function CardsWalletPage() {
 				</Typography>
 				<ul className={styles.faqList}>
 					<li>
-						<strong>Can I use it without internet?</strong>
-						<p>Yes, all cards are accessible offline at any time.</p>
-					</li>
-					<li>
-						<strong>Is my data safe?</strong>
+						<strong>Can it capture long screenshots?</strong>
 						<p>
-							Absolutely — your cards never leave your device, and no accounts
-							are required.
+							Yes, you can capture full-page or chat-length content using the
+							scrolling capture mode.
 						</p>
 					</li>
 					<li>
-						<strong>Can I show barcodes from my phone?</strong>
-						<p>Yes, just open a card and let the store scan your screen.</p>
+						<strong>Does it work offline?</strong>
+						<p>
+							Absolutely — no internet connection is needed for capturing or
+							editing.
+						</p>
+					</li>
+					<li>
+						<strong>Can I edit screenshots right away?</strong>
+						<p>
+							Yes, the editor opens automatically after capture for instant
+							annotations or cropping.
+						</p>
 					</li>
 				</ul>
 			</Container>
 
-			{/* See all apps button — перед футером */}
+			{/* SEE ALL APPS */}
 			<Container
 				maxWidth="sm"
 				sx={{
@@ -253,7 +260,7 @@ export default function CardsWalletPage() {
 			>
 				<Button
 					variant="outlined"
-					color="primary"
+					color="warning"
 					href="https://play.google.com/store/apps/dev?id=8818860993188601793"
 					target="_blank"
 				>
@@ -265,7 +272,7 @@ export default function CardsWalletPage() {
 			<Container maxWidth="md" className={styles.footerLinks}>
 				<Typography variant="body2" align="center">
 					<a
-						href="/cards-wallet/terms"
+						href="/screenshot-pro-capture-edit/terms"
 						target="_blank"
 						rel="noopener noreferrer"
 						className={styles.legalLink}
@@ -274,7 +281,7 @@ export default function CardsWalletPage() {
 					</a>
 					{" • "}
 					<a
-						href="/cards-wallet/privacy-policy"
+						href="/screenshot-pro-capture-edit/privacy-policy"
 						target="_blank"
 						rel="noopener noreferrer"
 						className={styles.legalLink}

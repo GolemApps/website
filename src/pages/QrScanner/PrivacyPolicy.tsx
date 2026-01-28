@@ -15,11 +15,11 @@ const PrivacyPolicy: React.FC = () => {
 					<strong>Privacy Policy</strong>
 				</p>
 				<p>
-					This privacy policy is applicable to the QR scanner & Barcode reader
-					app (hereinafter referred to as "Application") for mobile devices,
-					which was developed by UtilitySoft Labs (hereinafter referred to as
-					"Service Provider") as a an Ad Supported service. This service is
-					provided "AS IS".
+					This privacy policy is applicable to the QR Scanner from Image app
+					(hereinafter referred to as "Application") for mobile devices, which
+					was developed by UtilitySoft Labs (hereinafter referred to as "Service
+					Provider") as a an Ad Supported service. This service is provided "AS
+					IS".
 				</p>
 				<p>
 					<strong>

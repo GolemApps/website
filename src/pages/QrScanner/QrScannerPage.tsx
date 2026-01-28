@@ -1,24 +1,24 @@
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import { Button, Container, Grid, Typography, Box } from "@mui/material";
-import CreditCardIcon from "@mui/icons-material/CreditCard";
-import styles from "./CardsWalletPage.module.css";
+import QrCodeScannerIcon from "@mui/icons-material/QrCodeScanner";
+import styles from "./QrScannerPage.module.css";
 
-export default function CardsWalletPage() {
+export default function QrScannerPage() {
 	return (
 		<>
 			<Helmet>
-				<title>Cards – Mobile Wallet — UtilitySoft Labs</title>
+				<title>QR Scanner from Image — UtilitySoft Labs</title>
 				<meta
 					name="description"
-					content="Digital wallet app to store and organize your loyalty, club, and membership cards securely. Replace plastic with Cards – Mobile Wallet by UtilitySoft Labs."
+					content="Scan, decode, and generate QR codes or barcodes instantly — fast, secure, and reliable QR Scanner from Image by UtilitySoft Labs."
 				/>
 			</Helmet>
 
 			{/* HERO SECTION */}
 			<Box
 				sx={{
-					background: "linear-gradient(120deg, #b2ffd2 0%, #c2e9fb 100%)",
+					background: "linear-gradient(120deg, #b7e6fc 0%, #82c6ff 100%)",
 					py: { xs: 8, md: 10 },
 					textAlign: "center",
 				}}
@@ -36,10 +36,10 @@ export default function CardsWalletPage() {
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.8 }}
 					>
-						<CreditCardIcon
+						<QrCodeScannerIcon
 							sx={{
 								fontSize: 80,
-								color: "#1976d2",
+								color: "#0288d1",
 								mb: 2,
 							}}
 						/>
@@ -52,7 +52,7 @@ export default function CardsWalletPage() {
 								fontFamily: "Poppins, sans-serif",
 							}}
 						>
-							Cards – Mobile Wallet
+							QR Scanner from Image
 						</Typography>
 
 						<Typography
@@ -68,9 +68,9 @@ export default function CardsWalletPage() {
 								fontSize: "1.25rem",
 							}}
 						>
-							Your secure digital wallet for loyalty, club, and membership
-							cards. Replace plastic with convenience — scan, store, and access
-							all your cards anytime on your Android device.
+							Fast, reliable, and privacy-focused QR & barcode scanner for your
+							Android device. Scan codes instantly from camera or images — no
+							internet, no tracking, no ads.
 						</Typography>
 
 						<Box
@@ -84,7 +84,7 @@ export default function CardsWalletPage() {
 							<Button
 								variant="contained"
 								color="primary"
-								href="https://play.google.com/store/apps/details?id=com.golemapps.cardwallet"
+								href="https://play.google.com/store/apps/details?id=com.golemapps.sample"
 								target="_blank"
 							>
 								Download on Google Play
@@ -117,7 +117,7 @@ export default function CardsWalletPage() {
 							}}
 						>
 							<a
-								href="/cards-wallet/terms"
+								href="/qr-scanner/terms"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
@@ -125,7 +125,7 @@ export default function CardsWalletPage() {
 							</a>{" "}
 							&nbsp;|&nbsp;{" "}
 							<a
-								href="/cards-wallet/privacy-policy"
+								href="/qr-scanner/privacy-policy"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
@@ -142,14 +142,15 @@ export default function CardsWalletPage() {
 					Overview
 				</Typography>
 				<Typography className={styles.sectionText}>
-					Cards – Mobile Wallet lets you store, organize, and access all your
-					loyalty, club, and membership cards in one clean, lightweight app.
-					Simply scan the barcode or enter card details — your wallet is now
-					digital.<br></br>
-					<br></br>
-					Built with privacy and simplicity in mind, it works fully offline, so
-					your data never leaves your device. The perfect solution for people
-					who value minimalism, security, and everyday convenience.
+					QR Scanner from Image instantly scans all major barcode formats — QR,
+					EAN, UPC, Code 39, Data Matrix, and more. Whether you need to read
+					product info, Wi-Fi codes, inventory tags, or coupons, this app does
+					it all — quickly and securely.
+					<br />
+					<br />
+					You can also scan from images in your gallery or generate your own QR
+					codes with one tap. All operations happen locally on your device,
+					ensuring your privacy.
 				</Typography>
 			</Container>
 
@@ -162,28 +163,28 @@ export default function CardsWalletPage() {
 				<Grid container spacing={3} className={styles.featuresGrid}>
 					{[
 						{
-							title: "Store All Your Cards",
-							desc: "Add loyalty, membership, or gift cards in seconds with barcode or manual entry.",
+							title: "Instant Scanning",
+							desc: "Auto-detects and decodes QR & barcodes instantly — no tap required.",
 						},
 						{
-							title: "Barcode & QR Display",
-							desc: "Show any barcode directly from your screen for easy scanning in stores.",
+							title: "Scan from Images",
+							desc: "Import and scan QR codes directly from gallery or screenshots.",
 						},
 						{
-							title: "Offline Access",
-							desc: "Access all cards anytime — even without internet connection.",
+							title: "Create QR Codes",
+							desc: "Generate your own QR codes for text, URLs, Wi-Fi, or contacts.",
 						},
 						{
-							title: "Secure Local Storage",
-							desc: "All data stays encrypted and private on your device — not in the cloud.",
+							title: "Works Offline",
+							desc: "No internet required. Your scans stay private on your device.",
 						},
 						{
-							title: "Customizable Look",
-							desc: "Personalize card colors, icons, and backgrounds to match your style.",
+							title: "History & Sharing",
+							desc: "View, copy, and share your scan history anytime.",
 						},
 						{
-							title: "Backup & Restore",
-							desc: "Easily export or restore your cards when switching devices.",
+							title: "Lightweight & Ad-Free",
+							desc: "No ads, no tracking — just pure utility and performance.",
 						},
 					].map((f, i) => (
 						<Grid item xs={12} sm={6} md={4} key={i}>
@@ -208,13 +209,13 @@ export default function CardsWalletPage() {
 					Why It Matters
 				</Typography>
 				<Typography className={styles.sectionText}>
-					Carrying dozens of plastic cards is outdated. Cards – Mobile Wallet
-					simplifies your life by putting everything in one secure, digital
-					place.<br></br>
-					<br></br>
-					Enjoy a clutter-free experience at checkout, faster access to your
-					memberships, and peace of mind knowing your information is stored
-					locally — safe, simple, and always with you.
+					Everyday scanning should be simple, fast, and private. QR Scanner &
+					Barcode Reader gives you a clean, ad-free experience focused purely on
+					performance and reliability.
+					<br />
+					<br />
+					No unnecessary permissions, no background tracking — just a modern
+					tool built for accuracy, speed, and privacy.
 				</Typography>
 			</Container>
 
@@ -225,24 +226,28 @@ export default function CardsWalletPage() {
 				</Typography>
 				<ul className={styles.faqList}>
 					<li>
-						<strong>Can I use it without internet?</strong>
-						<p>Yes, all cards are accessible offline at any time.</p>
-					</li>
-					<li>
-						<strong>Is my data safe?</strong>
+						<strong>Can I scan codes without internet?</strong>
 						<p>
-							Absolutely — your cards never leave your device, and no accounts
-							are required.
+							Yes, the app works 100% offline — no data is uploaded anywhere.
 						</p>
 					</li>
 					<li>
-						<strong>Can I show barcodes from my phone?</strong>
-						<p>Yes, just open a card and let the store scan your screen.</p>
+						<strong>Does it support all barcode formats?</strong>
+						<p>
+							Yes, including QR, UPC, EAN, Code 39, Data Matrix, and many
+							others.
+						</p>
+					</li>
+					<li>
+						<strong>Can I scan from photos?</strong>
+						<p>
+							Absolutely — just select any image from your gallery to decode.
+						</p>
 					</li>
 				</ul>
 			</Container>
 
-			{/* See all apps button — перед футером */}
+			{/* SEE ALL APPS */}
 			<Container
 				maxWidth="sm"
 				sx={{
@@ -265,7 +270,7 @@ export default function CardsWalletPage() {
 			<Container maxWidth="md" className={styles.footerLinks}>
 				<Typography variant="body2" align="center">
 					<a
-						href="/cards-wallet/terms"
+						href="/qr-scanner/terms"
 						target="_blank"
 						rel="noopener noreferrer"
 						className={styles.legalLink}
@@ -274,7 +279,7 @@ export default function CardsWalletPage() {
 					</a>
 					{" • "}
 					<a
-						href="/cards-wallet/privacy-policy"
+						href="/qr-scanner/privacy-policy"
 						target="_blank"
 						rel="noopener noreferrer"
 						className={styles.legalLink}

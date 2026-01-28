@@ -1,5 +1,6 @@
 {
 	"rewrites": [
+		{ "source": "/recover-deleted-messages", "destination": "/" },
 		{
 			"source": "/recover-deleted-messages/privacy-policy",
 			"destination": "/"
@@ -14,6 +15,7 @@
 			"destination": "/"
 		},
 		{ "source": "/battery-health-and-alarm/terms", "destination": "/" },
+		{ "source": "/screenshot-pro-capture-edit", "destination": "/" },
 		{
 			"source": "/screenshot-pro-capture-edit/privacy-policy",
 			"destination": "/"
@@ -27,11 +29,19 @@
 		},
 		{ "source": "/cards-wallet/terms", "destination": "/" },
 		{
+			"source": "/qr-scanner",
+			"destination": "/"
+		},
+		{
 			"source": "/qr-scanner/privacy-policy",
 			"destination": "/"
 		},
 		{
 			"source": "/qr-scanner/terms",
+			"destination": "/"
+		},
+		{
+			"source": "/barcode",
 			"destination": "/"
 		},
 		{

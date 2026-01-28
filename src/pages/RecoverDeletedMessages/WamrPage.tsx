@@ -1,24 +1,24 @@
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import { Button, Container, Grid, Typography, Box } from "@mui/material";
-import CreditCardIcon from "@mui/icons-material/CreditCard";
-import styles from "./CardsWalletPage.module.css";
+import RestoreIcon from "@mui/icons-material/Restore";
+import styles from "./WamrPage.module.css";
 
-export default function CardsWalletPage() {
+export default function WamrPage() {
 	return (
 		<>
 			<Helmet>
-				<title>Cards – Mobile Wallet — UtilitySoft Labs</title>
+				<title>WAMR: Recover Deleted Messages — UtilitySoft Labs</title>
 				<meta
 					name="description"
-					content="Digital wallet app to store and organize your loyalty, club, and membership cards securely. Replace plastic with Cards – Mobile Wallet by UtilitySoft Labs."
+					content="Recover deleted messages, photos, and videos from WhatsApp and other chat apps. Stay in control of what others delete with WAMR by UtilitySoft Labs."
 				/>
 			</Helmet>
 
 			{/* HERO SECTION */}
 			<Box
 				sx={{
-					background: "linear-gradient(120deg, #b2ffd2 0%, #c2e9fb 100%)",
+					background: "linear-gradient(120deg, #c8e6c9 0%, #67bc6b 100%)",
 					py: { xs: 8, md: 10 },
 					textAlign: "center",
 				}}
@@ -36,10 +36,10 @@ export default function CardsWalletPage() {
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.8 }}
 					>
-						<CreditCardIcon
+						<RestoreIcon
 							sx={{
 								fontSize: 80,
-								color: "#1976d2",
+								color: "#2e7d32",
 								mb: 2,
 							}}
 						/>
@@ -52,7 +52,7 @@ export default function CardsWalletPage() {
 								fontFamily: "Poppins, sans-serif",
 							}}
 						>
-							Cards – Mobile Wallet
+							WAMR: Recover Deleted Messages
 						</Typography>
 
 						<Typography
@@ -68,9 +68,10 @@ export default function CardsWalletPage() {
 								fontSize: "1.25rem",
 							}}
 						>
-							Your secure digital wallet for loyalty, club, and membership
-							cards. Replace plastic with convenience — scan, store, and access
-							all your cards anytime on your Android device.
+							Ever wondered what someone deleted before you could read it? WAMR
+							lets you recover deleted text messages, photos, videos, and voice
+							notes from WhatsApp and other chat apps — all locally and
+							securely.
 						</Typography>
 
 						<Box
@@ -83,15 +84,15 @@ export default function CardsWalletPage() {
 						>
 							<Button
 								variant="contained"
-								color="primary"
-								href="https://play.google.com/store/apps/details?id=com.golemapps.cardwallet"
+								color="success"
+								href="https://play.google.com/store/apps/details?id=com.golemapps.messagerecovery"
 								target="_blank"
 							>
 								Download on Google Play
 							</Button>
 							<Button
 								variant="outlined"
-								color="primary"
+								color="success"
 								href="https://play.google.com/store/apps/dev?id=8818860993188601793"
 								target="_blank"
 							>
@@ -106,18 +107,18 @@ export default function CardsWalletPage() {
 								color: "#555",
 								fontSize: 13,
 								"& a": {
-									color: "#1976d2",
+									color: "#2e7d32",
 									textDecoration: "none",
 									transition: "color 0.2s ease",
 								},
 								"& a:hover": {
 									textDecoration: "underline",
-									color: "#0d47a1",
+									color: "#1b5e20",
 								},
 							}}
 						>
 							<a
-								href="/cards-wallet/terms"
+								href="/recover-deleted-messages/terms"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
@@ -125,7 +126,7 @@ export default function CardsWalletPage() {
 							</a>{" "}
 							&nbsp;|&nbsp;{" "}
 							<a
-								href="/cards-wallet/privacy-policy"
+								href="/recover-deleted-messages/privacy-policy"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
@@ -142,14 +143,14 @@ export default function CardsWalletPage() {
 					Overview
 				</Typography>
 				<Typography className={styles.sectionText}>
-					Cards – Mobile Wallet lets you store, organize, and access all your
-					loyalty, club, and membership cards in one clean, lightweight app.
-					Simply scan the barcode or enter card details — your wallet is now
-					digital.<br></br>
-					<br></br>
-					Built with privacy and simplicity in mind, it works fully offline, so
-					your data never leaves your device. The perfect solution for people
-					who value minimalism, security, and everyday convenience.
+					WAMR helps you recover deleted messages and media by monitoring your
+					notification history. When someone deletes a message, photo, video, or
+					audio, WAMR automatically saves it for you.
+					<br />
+					<br />
+					All recovered messages stay private — saved only on your device. No
+					cloud upload, no external servers, just complete control over your
+					data.
 				</Typography>
 			</Container>
 
@@ -162,28 +163,28 @@ export default function CardsWalletPage() {
 				<Grid container spacing={3} className={styles.featuresGrid}>
 					{[
 						{
-							title: "Store All Your Cards",
-							desc: "Add loyalty, membership, or gift cards in seconds with barcode or manual entry.",
+							title: "Recover Deleted Messages",
+							desc: "Retrieve messages deleted from WhatsApp or other supported apps instantly.",
 						},
 						{
-							title: "Barcode & QR Display",
-							desc: "Show any barcode directly from your screen for easy scanning in stores.",
+							title: "Media Recovery",
+							desc: "Save deleted photos, videos, GIFs, and voice notes automatically.",
 						},
 						{
-							title: "Offline Access",
-							desc: "Access all cards anytime — even without internet connection.",
+							title: "Smart Notifications",
+							desc: "Detect deletions in real time through your notification history.",
 						},
 						{
-							title: "Secure Local Storage",
-							desc: "All data stays encrypted and private on your device — not in the cloud.",
+							title: "Full Privacy Control",
+							desc: "No internet required — your recovered data stays on your device only.",
 						},
 						{
-							title: "Customizable Look",
-							desc: "Personalize card colors, icons, and backgrounds to match your style.",
+							title: "Clean, Intuitive Design",
+							desc: "Simple interface with organized message history and media viewer.",
 						},
 						{
-							title: "Backup & Restore",
-							desc: "Easily export or restore your cards when switching devices.",
+							title: "Lightweight & Secure",
+							desc: "Optimized for smooth performance and minimal battery use.",
 						},
 					].map((f, i) => (
 						<Grid item xs={12} sm={6} md={4} key={i}>
@@ -208,13 +209,13 @@ export default function CardsWalletPage() {
 					Why It Matters
 				</Typography>
 				<Typography className={styles.sectionText}>
-					Carrying dozens of plastic cards is outdated. Cards – Mobile Wallet
-					simplifies your life by putting everything in one secure, digital
-					place.<br></br>
-					<br></br>
-					Enjoy a clutter-free experience at checkout, faster access to your
-					memberships, and peace of mind knowing your information is stored
-					locally — safe, simple, and always with you.
+					People delete messages — but you still deserve to know what was said.
+					WAMR protects you from losing important conversations, photos, or
+					files.
+					<br />
+					<br />
+					With its privacy-first approach and local storage, you stay in control
+					of your data at all times.
 				</Typography>
 			</Container>
 
@@ -225,24 +226,30 @@ export default function CardsWalletPage() {
 				</Typography>
 				<ul className={styles.faqList}>
 					<li>
-						<strong>Can I use it without internet?</strong>
-						<p>Yes, all cards are accessible offline at any time.</p>
-					</li>
-					<li>
-						<strong>Is my data safe?</strong>
+						<strong>Can WAMR recover deleted messages from WhatsApp?</strong>
 						<p>
-							Absolutely — your cards never leave your device, and no accounts
-							are required.
+							Yes — as long as notifications were received before deletion, the
+							app can restore them.
 						</p>
 					</li>
 					<li>
-						<strong>Can I show barcodes from my phone?</strong>
-						<p>Yes, just open a card and let the store scan your screen.</p>
+						<strong>Does WAMR read my messages directly?</strong>
+						<p>
+							No. It works by monitoring notification history and never accesses
+							private chats directly.
+						</p>
+					</li>
+					<li>
+						<strong>Are my recovered messages stored online?</strong>
+						<p>
+							No — everything is saved locally on your device. Nothing is sent
+							to the cloud.
+						</p>
 					</li>
 				</ul>
 			</Container>
 
-			{/* See all apps button — перед футером */}
+			{/* SEE ALL APPS */}
 			<Container
 				maxWidth="sm"
 				sx={{
@@ -253,7 +260,7 @@ export default function CardsWalletPage() {
 			>
 				<Button
 					variant="outlined"
-					color="primary"
+					color="success"
 					href="https://play.google.com/store/apps/dev?id=8818860993188601793"
 					target="_blank"
 				>
@@ -265,7 +272,7 @@ export default function CardsWalletPage() {
 			<Container maxWidth="md" className={styles.footerLinks}>
 				<Typography variant="body2" align="center">
 					<a
-						href="/cards-wallet/terms"
+						href="/recover-deleted-messages/terms"
 						target="_blank"
 						rel="noopener noreferrer"
 						className={styles.legalLink}
@@ -274,7 +281,7 @@ export default function CardsWalletPage() {
 					</a>
 					{" • "}
 					<a
-						href="/cards-wallet/privacy-policy"
+						href="/recover-deleted-messages/privacy-policy"
 						target="_blank"
 						rel="noopener noreferrer"
 						className={styles.legalLink}
