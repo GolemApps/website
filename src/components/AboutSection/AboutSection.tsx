@@ -1,6 +1,7 @@
 import React from "react";
 import "./AboutSection.css";
 import qrIcon from "../../assets/qr.png";
+import barcodeIcon from "../../assets/barcode.png";
 import batteryIcon from "../../assets/battery.png";
 import walletIcon from "../../assets/wallet.png";
 import screenshotIcon from "../../assets/screenshot.png";
@@ -26,16 +27,22 @@ const apps = [
 		link: "https://play.google.com/store/apps/details?id=com.golemapps.screenshotLite",
 	},
 	{
-		title: "WAMR: Reveal Deleted Messages",
+		title: "WAMR: Recover Deleted Messages",
 		desc: "Recover deleted messages, photos, and videos instantly — stay in control of what others unsend.",
 		icon: wamrIcon,
 		link: "https://play.google.com/store/apps/details?id=com.golemapps.messagerecovery",
 	},
 	{
-		title: "QR Scanner & Barcode Reader",
-		desc: "Scan and generate any QR or barcode instantly — fast, private, and ad-free.",
+		title: "QR Scanner from Image",
+		desc: "Scan QR codes directly from images or screenshots — quick, simple, and reliable. Works fully offline with no tracking.",
 		icon: qrIcon,
-		link: "#",
+		link: "https://play.google.com/store/apps/details?id=com.softUtilityLabs.qrScanner",
+	},
+	{
+		title: "QR & Barcode Scanner",
+		desc: "Scan and recognize any QR or barcode instantly — fast, secure, and ad-free. Perfect for products, links, Wi-Fi, and more.",
+		icon: barcodeIcon,
+		link: "https://play.google.com/store/apps/details?id=com.softUtilityLabs.barcodeScanner",
 	},
 ];
 
@@ -69,7 +76,7 @@ const AboutSection: React.FC = () => {
 
 				<div className="explore-more">
 					<a
-						href="https://play.google.com/store/apps/dev?id=6447182245874050536"
+						href="https://play.google.com/store/apps/dev?id=8818860993188601793"
 						className="explore-link"
 						target="blank"
 					>

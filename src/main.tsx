@@ -9,6 +9,7 @@ import { ThemeProvider, CssBaseline } from "@mui/material";
 // Battery Health And Alarm
 import BatteryPrivacyPolicy from "./pages/BatteryHealthAndAlarm/PrivacyPolicy";
 import BatteryTerms from "./pages/BatteryHealthAndAlarm/Terms";
+import BatteryHealthPage from "./pages/BatteryHealthAndAlarm/BatteryHealthPage";
 
 // Recover Deleted Messages
 import RecoverPrivacyPolicy from "./pages/RecoverDeletedMessages/PrivacyPolicy";
@@ -18,7 +19,7 @@ import RecoverTerms from "./pages/RecoverDeletedMessages/Terms";
 import ScreenshotPrivacyPolicy from "./pages/ScreenshotPro/PrivacyPolicy";
 import ScreenshotTerms from "./pages/ScreenshotPro/Terms";
 
-// Card Wallet
+// Cards Wallet
 import CardWalletPrivacyPolicy from "./pages/CardWallet/PrivacyPolicy";
 import CardWalletTerms from "./pages/CardWallet/Terms";
 
@@ -29,6 +30,13 @@ import QrScannerTerms from "./pages/QrScanner/Terms";
 // Barcode
 import BarcodePrivacyPolicy from "./pages/Barcode/PrivacyPolicy";
 import BarcodeTerms from "./pages/Barcode/Terms";
+import CardsWalletPage from "./pages/CardWallet/CardsWalletPage";
+import Header from "./components/Header/Header";
+import QrScannerPage from "./pages/QrScanner/QrScannerPage";
+import ScreenshotProPage from "./pages/ScreenshotPro/ScreenshotProPage";
+import QrBarcodeScannerPage from "./pages/Barcode/QrBarcodeScannerPage";
+import WamrPage from "./pages/RecoverDeletedMessages/WamrPage";
+import ScrollToTop from "./utils/ScrollToTop";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
 	<React.StrictMode>
@@ -36,10 +44,16 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 			<ThemeProvider theme={theme}>
 				<CssBaseline />
 				<BrowserRouter>
+					<ScrollToTop />
+					<Header />
 					<Routes>
 						<Route path="/" element={<Home />} />
 
 						{/* Battery Health & Alarm */}
+						<Route
+							path="/battery-health-and-alarm"
+							element={<BatteryHealthPage />}
+						/>
 						<Route
 							path="/battery-health-and-alarm/privacy-policy"
 							element={<BatteryPrivacyPolicy />}
@@ -50,6 +64,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 						/>
 
 						{/* Recover Deleted Messages */}
+						<Route path="/recover-deleted-messages" element={<WamrPage />} />
 						<Route
 							path="/recover-deleted-messages/privacy-policy"
 							element={<RecoverPrivacyPolicy />}
@@ -60,6 +75,12 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 						/>
 
 						{/* Screenshot Pro */}
+
+						<Route
+							path="/screenshot-pro-capture-edit"
+							element={<ScreenshotProPage />}
+						/>
+
 						<Route
 							path="/screenshot-pro-capture-edit/privacy-policy"
 							element={<ScreenshotPrivacyPolicy />}
@@ -69,14 +90,16 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 							element={<ScreenshotTerms />}
 						/>
 
-						{/* Card Wallet */}
+						{/* Cards Wallet */}
+						<Route path="/cards-wallet" element={<CardsWalletPage />} />
 						<Route
-							path="/card-wallet/privacy-policy"
+							path="/cards-wallet/privacy-policy"
 							element={<CardWalletPrivacyPolicy />}
 						/>
-						<Route path="/card-wallet/terms" element={<CardWalletTerms />} />
+						<Route path="/cards-wallet/terms" element={<CardWalletTerms />} />
 
-						{/* QR scanner & Barcode reader */}
+						{/* QR Scanner from Image */}
+						<Route path="/qr-scanner" element={<QrScannerPage />} />
 						<Route
 							path="/qr-scanner/privacy-policy"
 							element={<QrScannerPrivacyPolicy />}
@@ -84,6 +107,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 						<Route path="/qr-scanner/terms" element={<QrScannerTerms />} />
 
 						{/* Barcode */}
+						<Route path="/barcode" element={<QrBarcodeScannerPage />} />
 						<Route
 							path="/barcode/privacy-policy"
 							element={<BarcodePrivacyPolicy />}
@@ -93,5 +117,5 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 				</BrowserRouter>
 			</ThemeProvider>
 		</HelmetProvider>
-	</React.StrictMode>
+	</React.StrictMode>,
 );

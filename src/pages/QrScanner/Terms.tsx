@@ -16,9 +16,9 @@ const Terms: React.FC = () => {
 						<strong>Terms &amp; Conditions</strong>
 					</p>
 					<p>
-						These terms and conditions applies to the QR scanner & Barcode
-						reader (hereby referred to as "Application") for mobile devices that
-						was created by UtilitySoft Labs (hereby referred to as "Service
+						These terms and conditions applies to the QR Scanner from Image
+						(hereby referred to as "Application") for mobile devices that was
+						created by UtilitySoft Labs (hereby referred to as "Service
 						Provider") as an Ad Supported service.
 					</p>
 					<p>
@@ -225,7 +225,7 @@ const Terms: React.FC = () => {
 					<p>
 						If you have any questions or suggestions about the Terms and
 						Conditions, please do not hesitate to contact the Service Provider
-						at golemapps.main@gmail.com.
+						at utilitysoftlabs@gmail.com.
 					</p>
 				</div>
 			</Container>
