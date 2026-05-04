@@ -51,6 +51,20 @@ const PrivacyPolicy: React.FC = () => {
 					use the Application.
 				</p>
 				<p>
+					<strong>Advertising and device identifiers</strong>
+				</p>
+				<p>
+					For advertising, app mediation, analytics, and fraud prevention, the
+					Application and integrated third-party SDKs may process your{" "}
+					<strong>IP address</strong>, your device&apos;s{" "}
+					<strong>advertising ID</strong> (for example, Google Advertising ID /
+					GAID on Android or equivalent identifiers where applicable), and related
+					device or usage data. This supports delivery and measurement of ads
+					(including personalized or non-personalized advertising where
+					allowed), app improvement, and compliance workflows, consistent with
+					the privacy policies of the third-party providers listed below.
+				</p>
+				<p>
 					<strong>
 						Does the Application collect precise real time location information
 						of the device?
@@ -113,6 +127,15 @@ const PrivacyPolicy: React.FC = () => {
 							rel="noopener"
 						>
 							AdMob
+						</a>
+					</li>
+					<li>
+						<a
+							target="_blank"
+							href="https://www.appodeal.com/privacy-policy"
+							rel="noopener noreferrer"
+						>
+							Appodeal
 						</a>
 					</li>
 					<li>
@@ -281,7 +304,7 @@ const PrivacyPolicy: React.FC = () => {
 					advised to consult this Privacy Policy regularly for any changes, as
 					continued use is deemed approval of all changes.
 				</p>
-				<p>This privacy policy is effective as of 2024-06-30</p>
+				<p>This privacy policy is effective as of 2026-05-01</p>
 				<p>
 					<strong>Your Consent</strong>
 				</p>
