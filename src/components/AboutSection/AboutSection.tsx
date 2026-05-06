@@ -27,8 +27,8 @@ const apps = [
 		link: "https://play.google.com/store/apps/details?id=com.golemapps.screenshotLite",
 	},
 	{
-		title: "WAMR: Recover Deleted Messages",
-		desc: "Recover deleted messages, photos, and videos instantly — stay in control of what others unsend.",
+		title: "Notification History",
+		desc: "Track notification activity in one timeline and review recent alerts with privacy-first local storage.",
 		icon: wamrIcon,
 		link: "https://play.google.com/store/apps/details?id=com.golemapps.messagerecovery",
 	},

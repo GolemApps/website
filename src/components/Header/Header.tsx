@@ -42,6 +42,10 @@ const apps = [
 		path: "/recover-deleted-messages",
 	},
 	{
+		name: "Notification History",
+		path: "/notification-history",
+	},
+	{
 		name: "QR & Barcode Scanner",
 		path: "/barcode",
 	},
