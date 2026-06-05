@@ -1,54 +1,92 @@
 import React from "react";
 import "./HeroSection.css";
-import PhoneScanAnimation from "../../components/PhoneScanAnimation/PhoneScanAnimation";
+
+const HERO_PHONE_IMAGE = "/images/home/hero-phone.png";
 
 const HeroSection: React.FC = () => {
+	const scrollToSection = (sectionId: string) => {
+		document.querySelector(sectionId)?.scrollIntoView({ behavior: "smooth" });
+	};
+
 	return (
 		<section className="hero">
+			<div className="hero-overlay" />
+
 			<div className="hero-container">
 				<div className="hero-text">
 					<h1>
-						Smart Android Tools.
+						Smart Android
 						<br />
-						Crafted by <span>UtilitySoft Labs</span>
+						tools for
+						<br />
+						<span>everyday tasks</span>
 					</h1>
 
 					<p>
-						We build lightweight, powerful, and privacy-focused apps that
-						simplify your digital life.
+						Lightweight, powerful, and privacy-focused apps that simplify your
+						digital life.
 					</p>
 
 					<div className="hero-buttons">
-						<a
-							href="#apps"
+						<button
+							type="button"
 							className="btn primary"
-							onClick={(e) => {
-								e.preventDefault();
-								document
-									.querySelector("#apps")
-									?.scrollIntoView({ behavior: "smooth" });
-							}}
+							onClick={() => scrollToSection("#apps")}
 						>
+							<span className="btn-icon">↗</span>
 							View Apps
-						</a>
+						</button>
 
-						<a
-							href="#contact"
+						<button
+							type="button"
 							className="btn secondary"
-							onClick={(e) => {
-								e.preventDefault();
-								document
-									.querySelector("#contact")
-									?.scrollIntoView({ behavior: "smooth" });
-							}}
+							onClick={() => scrollToSection("#contact")}
 						>
+							<span className="btn-icon">☏</span>
 							Contact / Support
-						</a>
+						</button>
+					</div>
+
+					<div className="hero-trust-row">
+						<div className="trust-card">
+							<span className="trust-icon green">盾</span>
+							<div>
+								<strong>Privacy Focused</strong>
+								<small>Your data stays with you</small>
+							</div>
+						</div>
+
+						<div className="trust-card">
+							<span className="trust-icon yellow">⚡</span>
+							<div>
+								<strong>Fast Performance</strong>
+								<small>Optimized for speed</small>
+							</div>
+						</div>
+
+						<div className="trust-card">
+							<span className="trust-icon purple">✦</span>
+							<div>
+								<strong>Simple Design</strong>
+								<small>Clean. Intuitive. Easy.</small>
+							</div>
+						</div>
 					</div>
 				</div>
 
-				<div className="hero-phone">
-					<PhoneScanAnimation />
+				<div className="hero-visual">
+					<div className="hero-orbits">
+						<span />
+						<span />
+						<span />
+					</div>
+
+					<img
+						className="hero-phone-image"
+						src={HERO_PHONE_IMAGE}
+						alt="UtilitySoft Labs app dashboard"
+						draggable={false}
+					/>
 				</div>
 			</div>
 		</section>

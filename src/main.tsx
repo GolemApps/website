@@ -39,12 +39,12 @@ import NotificationHistoryPrivacyPolicy from "./pages/NotificationHistory/Privac
 import NotificationHistoryTerms from "./pages/NotificationHistory/Terms";
 import CardsWalletPage from "./pages/CardWallet/CardsWalletPage";
 import DocumentSignaturePage from "./pages/DocumentSignature/DocumentSignaturePage";
-import Header from "./components/Header/Header";
 import QrScannerPage from "./pages/QrScanner/QrScannerPage";
 import ScreenshotProPage from "./pages/ScreenshotPro/ScreenshotProPage";
 import QrBarcodeScannerPage from "./pages/Barcode/QrBarcodeScannerPage";
 import WamrPage from "./pages/RecoverDeletedMessages/WamrPage";
 import ScrollToTop from "./utils/ScrollToTop";
+import AppLayout from "./layout/AppLayout";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
 	<React.StrictMode>
@@ -53,102 +53,103 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 				<CssBaseline />
 				<BrowserRouter>
 					<ScrollToTop />
-					<Header />
 					<Routes>
-						<Route path="/" element={<Home />} />
+						<Route element={<AppLayout />}>
+							<Route path="/" element={<Home />} />
 
-						{/* Battery Health & Alarm */}
-						<Route
-							path="/battery-health-and-alarm"
-							element={<BatteryHealthPage />}
-						/>
-						<Route
-							path="/battery-health-and-alarm/privacy-policy"
-							element={<BatteryPrivacyPolicy />}
-						/>
-						<Route
-							path="/battery-health-and-alarm/terms"
-							element={<BatteryTerms />}
-						/>
+							{/* Battery Health & Alarm */}
+							<Route
+								path="/battery-health-and-alarm"
+								element={<BatteryHealthPage />}
+							/>
+							<Route
+								path="/battery-health-and-alarm/privacy-policy"
+								element={<BatteryPrivacyPolicy />}
+							/>
+							<Route
+								path="/battery-health-and-alarm/terms"
+								element={<BatteryTerms />}
+							/>
 
-						{/* Recover Deleted Messages */}
-						<Route path="/recover-deleted-messages" element={<WamrPage />} />
-						<Route
-							path="/recover-deleted-messages/privacy-policy"
-							element={<RecoverPrivacyPolicy />}
-						/>
-						<Route
-							path="/recover-deleted-messages/terms"
-							element={<RecoverTerms />}
-						/>
+							{/* Recover Deleted Messages */}
+							<Route path="/recover-deleted-messages" element={<WamrPage />} />
+							<Route
+								path="/recover-deleted-messages/privacy-policy"
+								element={<RecoverPrivacyPolicy />}
+							/>
+							<Route
+								path="/recover-deleted-messages/terms"
+								element={<RecoverTerms />}
+							/>
 
-						{/* Notification History */}
-						<Route
-							path="/notification-history"
-							element={<NotificationHistoryPage />}
-						/>
-						<Route
-							path="/notification-history/privacy-policy"
-							element={<NotificationHistoryPrivacyPolicy />}
-						/>
-						<Route
-							path="/notification-history/terms"
-							element={<NotificationHistoryTerms />}
-						/>
+							{/* Notification History */}
+							<Route
+								path="/notification-history"
+								element={<NotificationHistoryPage />}
+							/>
+							<Route
+								path="/notification-history/privacy-policy"
+								element={<NotificationHistoryPrivacyPolicy />}
+							/>
+							<Route
+								path="/notification-history/terms"
+								element={<NotificationHistoryTerms />}
+							/>
 
-						{/* Screenshot Pro */}
+							{/* Screenshot Pro */}
 
-						<Route
-							path="/screenshot-pro-capture-edit"
-							element={<ScreenshotProPage />}
-						/>
+							<Route
+								path="/screenshot-pro-capture-edit"
+								element={<ScreenshotProPage />}
+							/>
 
-						<Route
-							path="/screenshot-pro-capture-edit/privacy-policy"
-							element={<ScreenshotPrivacyPolicy />}
-						/>
-						<Route
-							path="/screenshot-pro-capture-edit/terms"
-							element={<ScreenshotTerms />}
-						/>
+							<Route
+								path="/screenshot-pro-capture-edit/privacy-policy"
+								element={<ScreenshotPrivacyPolicy />}
+							/>
+							<Route
+								path="/screenshot-pro-capture-edit/terms"
+								element={<ScreenshotTerms />}
+							/>
 
-						{/* Cards Wallet */}
-						<Route path="/cards-wallet" element={<CardsWalletPage />} />
-						<Route
-							path="/cards-wallet/privacy-policy"
-							element={<CardWalletPrivacyPolicy />}
-						/>
-						<Route path="/cards-wallet/terms" element={<CardWalletTerms />} />
+							{/* Cards Wallet */}
+							<Route path="/cards-wallet" element={<CardsWalletPage />} />
+							<Route
+								path="/cards-wallet/privacy-policy"
+								element={<CardWalletPrivacyPolicy />}
+							/>
+							<Route path="/cards-wallet/terms" element={<CardWalletTerms />} />
 
-						{/* DocumentSignature */}
-						<Route
-							path="/document-signature"
-							element={<DocumentSignaturePage />}
-						/>
-						<Route
-							path="/document-signature/privacy-policy"
-							element={<DocumentSignaturePrivacyPolicy />}
-						/>
-						<Route
-							path="/document-signature/terms"
-							element={<DocumentSignatureTerms />}
-						/>
+							{/* DocumentSignature */}
+							<Route
+								path="/document-signature"
+								element={<DocumentSignaturePage />}
+							/>
+							<Route
+								path="/document-signature/privacy-policy"
+								element={<DocumentSignaturePrivacyPolicy />}
+							/>
+							<Route
+								path="/document-signature/terms"
+								element={<DocumentSignatureTerms />}
+							/>
 
-						{/* QR Scanner from Image */}
-						<Route path="/qr-scanner" element={<QrScannerPage />} />
-						<Route
-							path="/qr-scanner/privacy-policy"
-							element={<QrScannerPrivacyPolicy />}
-						/>
-						<Route path="/qr-scanner/terms" element={<QrScannerTerms />} />
+							{/* QR Scanner from Image */}
+							<Route path="/qr-scanner" element={<QrScannerPage />} />
+							<Route
+								path="/qr-scanner/privacy-policy"
+								element={<QrScannerPrivacyPolicy />}
+							/>
+							<Route path="/qr-scanner/terms" element={<QrScannerTerms />} />
 
-						{/* Barcode */}
-						<Route path="/barcode" element={<QrBarcodeScannerPage />} />
-						<Route
-							path="/barcode/privacy-policy"
-							element={<BarcodePrivacyPolicy />}
-						/>
-						<Route path="/barcode/terms" element={<BarcodeTerms />} />
+							{/* Barcode */}
+							<Route path="/barcode" element={<QrBarcodeScannerPage />} />
+							<Route
+								path="/barcode/privacy-policy"
+								element={<BarcodePrivacyPolicy />}
+							/>
+							<Route path="/barcode/terms" element={<BarcodeTerms />} />
+						</Route>
 					</Routes>
 				</BrowserRouter>
 			</ThemeProvider>

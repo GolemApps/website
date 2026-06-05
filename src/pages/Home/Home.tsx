@@ -5,6 +5,7 @@ import AboutSection from "../../components/AboutSection/AboutSection";
 import ValuesSection from "../../components/ValuesSection/ValuesSection";
 import ContactSection from "../../components/ContactSection/ContactSection";
 import Footer from "../../components/Footer/Footer";
+import Header from "../../components/Header/Header";
 
 const Home: React.FC = () => {
 	return (
@@ -13,7 +14,10 @@ const Home: React.FC = () => {
 				<title>UtilitySoft Labs</title>
 				<meta name="description" content="UtilitySoft Labs" />
 			</Helmet>
-			<HeroSection />
+			<div className="home-hero-shell">
+				<Header />
+				<HeroSection />
+			</div>
 			<AboutSection />
 			<ValuesSection />
 			<ContactSection />

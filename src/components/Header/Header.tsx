@@ -16,9 +16,10 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useTheme } from "@mui/material/styles";
 import logo from "../../assets/utilitysoft_labs_icon.png";
+import "./Header.css";
 
 const apps = [
 	{
@@ -37,10 +38,6 @@ const apps = [
 		name: "Screenshot & Image Editor",
 		path: "/screenshot-pro-capture-edit",
 	},
-	// {
-	// 	name: "WAMR: Recover Deleted Messages",
-	// 	path: "/recover-deleted-messages",
-	// },
 	{
 		name: "Notification History",
 		path: "/notification-history",
@@ -51,15 +48,20 @@ const apps = [
 	},
 	{
 		name: "Sign Documents: PDF & Image",
-		path: "document-signature",
+		path: "/document-signature",
 	},
 ];
 
 export default function Header() {
 	const theme = useTheme();
 	const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+	const location = useLocation();
+
 	const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 	const [drawerOpen, setDrawerOpen] = React.useState(false);
+
+	const isHomeActive = location.pathname === "/";
+	const isAppsActive = apps.some((app) => location.pathname === app.path);
 
 	const handleMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
 		setAnchorEl(event.currentTarget);
@@ -70,88 +72,49 @@ export default function Header() {
 	};
 
 	return (
-		<AppBar
-			position="sticky"
-			elevation={0}
-			sx={{
-				backgroundColor: "#ffffffcc",
-				backdropFilter: "blur(10px)",
-				color: "#000",
-				boxShadow: "0 1px 6px rgba(0,0,0,0.08)",
-			}}
-		>
-			<Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
-				{/* Logo */}
-				<Box
-					component={Link}
-					to="/"
-					sx={{
-						display: "flex",
-						alignItems: "center",
-						gap: 1,
-						textDecoration: "none",
-					}}
-				>
+		<AppBar position="relative" elevation={0} className="site-header">
+			<Toolbar className="site-header-toolbar">
+				<Box component={Link} to="/" className="site-header-logo">
 					<Box
 						component="img"
 						src={logo}
 						alt="UtilitySoft Labs"
-						sx={{
-							width: 30,
-							height: 30,
-							opacity: 0.95,
-							transition: "opacity 0.3s ease",
-							"&:hover": { opacity: 1 },
-						}}
+						className="site-header-logo-image"
 					/>
-					<Typography
-						sx={{
-							fontWeight: 500, // было 500 → делаем тоньше
-							fontSize: "1.1rem",
-							fontFamily: "'Poppins', sans-serif",
-							letterSpacing: 0.4, // чуть больше расстояние
-							color: "text.primary",
-							userSelect: "none",
-							transition: "color 0.3s ease",
-							"&:hover": { color: "primary.main" },
-						}}
-					>
+
+					<Typography component="span" className="site-header-logo-text">
 						UtilitySoft Labs
 					</Typography>
 				</Box>
 
-				{/* Desktop Navigation */}
 				{!isMobile ? (
-					<Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
+					<Box className="site-header-nav">
 						<Button
 							component={Link}
 							to="/"
-							color="inherit"
-							sx={{ textTransform: "none" }}
+							className={`site-header-nav-button ${
+								isHomeActive ? "active" : ""
+							}`}
+							disableRipple
 						>
 							Home
 						</Button>
 
-						{/* Dropdown Menu */}
 						<Button
-							color="inherit"
+							className={`site-header-nav-button ${isAppsActive ? "active" : ""}`}
 							onClick={handleMenuOpen}
 							endIcon={<ArrowDropDownIcon />}
-							sx={{ textTransform: "none" }}
+							disableRipple
 						>
 							Apps
 						</Button>
+
 						<Menu
 							anchorEl={anchorEl}
 							open={Boolean(anchorEl)}
 							onClose={handleMenuClose}
 							PaperProps={{
-								sx: {
-									mt: 1.5,
-									minWidth: 220,
-									borderRadius: 2,
-									boxShadow: "0 4px 10px rgba(0,0,0,0.08)",
-								},
+								className: "site-header-menu-paper",
 							}}
 						>
 							{apps.map((app) => (
@@ -160,10 +123,7 @@ export default function Header() {
 									component={Link}
 									to={app.path}
 									onClick={handleMenuClose}
-									sx={{
-										fontFamily: "Poppins, sans-serif",
-										fontSize: "0.95rem",
-									}}
+									className="site-header-menu-item"
 								>
 									{app.name}
 								</MenuItem>
@@ -171,30 +131,35 @@ export default function Header() {
 						</Menu>
 
 						<Button
-							variant="outlined"
-							color="primary"
 							href="https://play.google.com/store/apps/dev?id=8818860993188601793"
 							target="_blank"
-							sx={{ borderRadius: 3, textTransform: "none", fontWeight: 600 }}
+							className="site-header-google-button"
+							disableRipple
 						>
+							<img
+								src="/icon-google-play.png"
+								alt=""
+								className="site-header-google-icon"
+							/>
 							Google Play
 						</Button>
 					</Box>
 				) : (
-					// Mobile menu button
-					<IconButton onClick={() => setDrawerOpen(true)}>
+					<IconButton
+						onClick={() => setDrawerOpen(true)}
+						className="site-header-mobile-button"
+					>
 						<MenuIcon />
 					</IconButton>
 				)}
 			</Toolbar>
 
-			{/* Mobile Drawer */}
 			<Drawer
 				anchor="right"
 				open={drawerOpen}
 				onClose={() => setDrawerOpen(false)}
 				PaperProps={{
-					sx: { width: 260, backgroundColor: "#fff" },
+					className: "site-header-drawer-paper",
 				}}
 			>
 				<List>
@@ -205,6 +170,7 @@ export default function Header() {
 					>
 						<ListItemText primary="Home" />
 					</ListItemButton>
+
 					{apps.map((app) => (
 						<ListItemButton
 							key={app.path}
@@ -215,6 +181,7 @@ export default function Header() {
 							<ListItemText primary={app.name} />
 						</ListItemButton>
 					))}
+
 					<ListItemButton
 						href="https://play.google.com/store/apps/dev?id=8818860993188601793"
 						target="_blank"
