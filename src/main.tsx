@@ -34,6 +34,9 @@ import DocumentSignatureTerms from "./pages/DocumentSignature/Terms";
 // Barcode
 import BarcodePrivacyPolicy from "./pages/Barcode/PrivacyPolicy";
 import BarcodeTerms from "./pages/Barcode/Terms";
+import NotificationHistoryPage from "./pages/NotificationHistory/NotificationHistoryPage";
+import NotificationHistoryPrivacyPolicy from "./pages/NotificationHistory/PrivacyPolicy";
+import NotificationHistoryTerms from "./pages/NotificationHistory/Terms";
 import CardsWalletPage from "./pages/CardWallet/CardsWalletPage";
 import DocumentSignaturePage from "./pages/DocumentSignature/DocumentSignaturePage";
 import Header from "./components/Header/Header";
@@ -77,6 +80,20 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 						<Route
 							path="/recover-deleted-messages/terms"
 							element={<RecoverTerms />}
+						/>
+
+						{/* Notification History */}
+						<Route
+							path="/notification-history"
+							element={<NotificationHistoryPage />}
+						/>
+						<Route
+							path="/notification-history/privacy-policy"
+							element={<NotificationHistoryPrivacyPolicy />}
+						/>
+						<Route
+							path="/notification-history/terms"
+							element={<NotificationHistoryTerms />}
 						/>
 
 						{/* Screenshot Pro */}

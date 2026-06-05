@@ -6,7 +6,12 @@
 			"destination": "/"
 		},
 		{ "source": "/recover-deleted-messages/terms", "destination": "/" },
-
+		{ "source": "/notification-history", "destination": "/" },
+		{
+			"source": "/notification-history/privacy-policy",
+			"destination": "/"
+		},
+		{ "source": "/notification-history/terms", "destination": "/" },
 		{
 			"source": "/battery-health-and-alarm",
 			"destination": "/"

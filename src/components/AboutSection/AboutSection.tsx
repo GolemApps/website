@@ -5,7 +5,7 @@ import barcodeIcon from "../../assets/barcode.png";
 import batteryIcon from "../../assets/battery.png";
 import walletIcon from "../../assets/wallet.png";
 import screenshotIcon from "../../assets/screenshot.png";
-import wamrIcon from "../../assets/wamr.png";
+import notificationHistoryIcon from "../../assets/wamr.png";
 
 const apps = [
 	{
@@ -27,10 +27,10 @@ const apps = [
 		link: "https://play.google.com/store/apps/details?id=com.golemapps.screenshotLite",
 	},
 	{
-		title: "WAMR: Recover Deleted Messages",
-		desc: "Recover deleted messages, photos, and videos instantly — stay in control of what others unsend.",
-		icon: wamrIcon,
-		link: "https://play.google.com/store/apps/details?id=com.golemapps.messagerecovery",
+		title: "Notification History",
+		desc: "Track notification activity in one timeline and review recent alerts with privacy-first local storage.",
+		icon: notificationHistoryIcon,
+		link: "https://play.google.com/store/apps/details?id=com.golemapps.notificationHistory",
 	},
 	{
 		title: "QR Scanner from Image",

@@ -37,9 +37,13 @@ const apps = [
 		name: "Screenshot & Image Editor",
 		path: "/screenshot-pro-capture-edit",
 	},
+	// {
+	// 	name: "WAMR: Recover Deleted Messages",
+	// 	path: "/recover-deleted-messages",
+	// },
 	{
-		name: "WAMR: Recover Deleted Messages",
-		path: "/recover-deleted-messages",
+		name: "Notification History",
+		path: "/notification-history",
 	},
 	{
 		name: "QR & Barcode Scanner",

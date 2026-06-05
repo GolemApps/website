@@ -15,11 +15,11 @@ const PrivacyPolicy: React.FC = () => {
 					<strong>Privacy Policy</strong>
 				</p>
 				<p>
-					This privacy policy is applicable to the Barcode & QR scanner reader
-					app (hereinafter referred to as "Application") for mobile devices,
-					which was developed by UtilitySoft Labs (hereinafter referred to as
-					"Service Provider") as a an Ad Supported service. This service is
-					provided "AS IS".
+					This privacy policy is applicable to the Notification History app
+					(hereinafter referred to as "Application") for mobile devices, which
+					was developed by UtilitySoft Labs (hereinafter referred to as "Service
+					Provider") as a an Ad Supported service. This service is provided "AS
+					IS".
 				</p>
 				<p>
 					<strong>
@@ -75,7 +75,7 @@ const PrivacyPolicy: React.FC = () => {
 					location of your mobile device.
 				</p>
 				<p>
-					This Application collects your device's location, which helps the
+					This Application collects your device&apos;s location, which helps the
 					Service Provider determine your approximate geographical location and
 					make use of in below ways:
 				</p>
@@ -255,7 +255,7 @@ const PrivacyPolicy: React.FC = () => {
 					The Service Provider will retain User Provided data for as long as you
 					use the Application and for a reasonable time thereafter. The Service
 					Provider will retain Automatically Collected information for up to 24
-					months and thereafter may store it in aggregate. If you'd like the
+					months and thereafter may store it in aggregate. If you&apos;d like the
 					Service Provider to delete User Provided Data that you have provided
 					via the Application, please contact them at utilitysoftlabs@gmail.com
 					and we will respond in a reasonable time. Please note that some or all
@@ -311,7 +311,7 @@ const PrivacyPolicy: React.FC = () => {
 				<p>
 					By using the Application, you are giving your consent to the Service
 					Provider processing of your information as set forth in this Privacy
-					Policy now and as amended by us. "Processing,” means using cookies on
+					Policy now and as amended by us. "Processing," means using cookies on
 					a computer/hand held device or using or touching information in any
 					way, including, but not limited to, collecting, storing, deleting,
 					using, combining and disclosing information.
