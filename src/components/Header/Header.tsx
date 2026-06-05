@@ -45,6 +45,10 @@ const apps = [
 		name: "QR & Barcode Scanner",
 		path: "/barcode",
 	},
+	{
+		name: "Sign Documents: PDF & Image",
+		path: "document-signature",
+	},
 ];
 
 export default function Header() {

@@ -27,10 +27,15 @@ import CardWalletTerms from "./pages/CardWallet/Terms";
 import QrScannerPrivacyPolicy from "./pages/QrScanner/PrivacyPolicy";
 import QrScannerTerms from "./pages/QrScanner/Terms";
 
+// DocumentSignature
+import DocumentSignaturePrivacyPolicy from "./pages/DocumentSignature/PrivacyPolicy";
+import DocumentSignatureTerms from "./pages/DocumentSignature/Terms";
+
 // Barcode
 import BarcodePrivacyPolicy from "./pages/Barcode/PrivacyPolicy";
 import BarcodeTerms from "./pages/Barcode/Terms";
 import CardsWalletPage from "./pages/CardWallet/CardsWalletPage";
+import DocumentSignaturePage from "./pages/DocumentSignature/DocumentSignaturePage";
 import Header from "./components/Header/Header";
 import QrScannerPage from "./pages/QrScanner/QrScannerPage";
 import ScreenshotProPage from "./pages/ScreenshotPro/ScreenshotProPage";
@@ -97,6 +102,20 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 							element={<CardWalletPrivacyPolicy />}
 						/>
 						<Route path="/cards-wallet/terms" element={<CardWalletTerms />} />
+
+						{/* DocumentSignature */}
+						<Route
+							path="/document-signature"
+							element={<DocumentSignaturePage />}
+						/>
+						<Route
+							path="/document-signature/privacy-policy"
+							element={<DocumentSignaturePrivacyPolicy />}
+						/>
+						<Route
+							path="/document-signature/terms"
+							element={<DocumentSignatureTerms />}
+						/>
 
 						{/* QR Scanner from Image */}
 						<Route path="/qr-scanner" element={<QrScannerPage />} />

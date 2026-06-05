@@ -6,6 +6,7 @@
 			"destination": "/"
 		},
 		{ "source": "/recover-deleted-messages/terms", "destination": "/" },
+
 		{
 			"source": "/battery-health-and-alarm",
 			"destination": "/"
@@ -15,6 +16,7 @@
 			"destination": "/"
 		},
 		{ "source": "/battery-health-and-alarm/terms", "destination": "/" },
+
 		{ "source": "/screenshot-pro-capture-edit", "destination": "/" },
 		{
 			"source": "/screenshot-pro-capture-edit/privacy-policy",
@@ -22,12 +24,14 @@
 		},
 		{ "source": "/screenshot-pro-capture-edit/terms", "destination": "/" },
 		{ "source": "/(.*)", "destination": "/" },
+
 		{ "source": "/cards-wallet", "destination": "/" },
 		{
 			"source": "/cards-wallet/privacy-policy",
 			"destination": "/"
 		},
 		{ "source": "/cards-wallet/terms", "destination": "/" },
+
 		{
 			"source": "/qr-scanner",
 			"destination": "/"
@@ -40,6 +44,7 @@
 			"source": "/qr-scanner/terms",
 			"destination": "/"
 		},
+
 		{
 			"source": "/barcode",
 			"destination": "/"
@@ -50,6 +55,19 @@
 		},
 		{
 			"source": "/barcode/terms",
+			"destination": "/"
+		},
+
+		{
+			"source": "/document-signature",
+			"destination": "/"
+		},
+		{
+			"source": "/document-signature/privacy-policy",
+			"destination": "/"
+		},
+		{
+			"source": "/document-signature/terms",
 			"destination": "/"
 		}
 	]
