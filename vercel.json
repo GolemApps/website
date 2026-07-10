@@ -1,5 +1,9 @@
 {
 	"rewrites": [
+		{
+			"source": "/instagram/callback",
+			"destination": "/api/instagram/callback"
+		},
 		{ "source": "/recover-deleted-messages", "destination": "/" },
 		{
 			"source": "/recover-deleted-messages/privacy-policy",
