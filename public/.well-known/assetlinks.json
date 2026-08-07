@@ -1,0 +1,12 @@
+[
+	{
+		"relation": ["delegate_permission/common.handle_all_urls"],
+		"target": {
+			"namespace": "android_app",
+			"package_name": "com.utilitysoftlabs.gridline",
+			"sha256_cert_fingerprints": [
+				"E2:BD:2B:50:4B:F9:A3:54:B5:6E:1B:5D:CB:AF:F1:7C:54:A0:DF:EE:63:6B:C4:17:88:EA:13:44:D5:E2:EF:44"
+			]
+		}
+	}
+]
