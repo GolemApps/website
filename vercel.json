@@ -4,6 +4,8 @@
 			"source": "/instagram/callback",
 			"destination": "/api/instagram/callback"
 		},
+		{ "source": "/bluetooth-tracker-scan-airtag/privacy-policy", "destination": "/" },
+		{ "source": "/bluetooth-tracker-scan-airtag/terms", "destination": "/" },
 		{ "source": "/recover-deleted-messages", "destination": "/" },
 		{
 			"source": "/recover-deleted-messages/privacy-policy",

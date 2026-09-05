@@ -6,6 +6,10 @@ import Home from "./pages/Home/Home";
 import { theme } from "./theme";
 import { ThemeProvider, CssBaseline } from "@mui/material";
 
+// Bluetooth Tracker: Scan AirTag
+import BluetoothTrackerPrivacyPolicy from "./pages/BluetoothTracker/PrivacyPolicy";
+import BluetoothTrackerTerms from "./pages/BluetoothTracker/Terms";
+
 // Battery Health And Alarm
 import BatteryPrivacyPolicy from "./pages/BatteryHealthAndAlarm/PrivacyPolicy";
 import BatteryTerms from "./pages/BatteryHealthAndAlarm/Terms";
@@ -56,6 +60,16 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 					<Routes>
 						<Route element={<AppLayout />}>
 							<Route path="/" element={<Home />} />
+
+							{/* Bluetooth Tracker: Scan AirTag */}
+							<Route
+								path="/bluetooth-tracker-scan-airtag/privacy-policy"
+								element={<BluetoothTrackerPrivacyPolicy />}
+							/>
+							<Route
+								path="/bluetooth-tracker-scan-airtag/terms"
+								element={<BluetoothTrackerTerms />}
+							/>
 
 							{/* Battery Health & Alarm */}
 							<Route
