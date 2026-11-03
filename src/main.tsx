@@ -41,6 +41,9 @@ import BarcodeTerms from "./pages/Barcode/Terms";
 import NotificationHistoryPage from "./pages/NotificationHistory/NotificationHistoryPage";
 import NotificationHistoryPrivacyPolicy from "./pages/NotificationHistory/PrivacyPolicy";
 import NotificationHistoryTerms from "./pages/NotificationHistory/Terms";
+import GpsMapCameraPage from "./pages/GpsMapCamera/GpsMapCameraPage";
+import GpsMapCameraPrivacyPolicy from "./pages/GpsMapCamera/PrivacyPolicy";
+import GpsMapCameraTerms from "./pages/GpsMapCamera/Terms";
 import CardsWalletPage from "./pages/CardWallet/CardsWalletPage";
 import DocumentSignaturePage from "./pages/DocumentSignature/DocumentSignaturePage";
 import QrScannerPage from "./pages/QrScanner/QrScannerPage";
@@ -108,6 +111,17 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 							<Route
 								path="/notification-history/terms"
 								element={<NotificationHistoryTerms />}
+							/>
+
+							{/* GPS Map Camera */}
+							<Route path="/gps-map-camera" element={<GpsMapCameraPage />} />
+							<Route
+								path="/gps-map-camera/privacy-policy"
+								element={<GpsMapCameraPrivacyPolicy />}
+							/>
+							<Route
+								path="/gps-map-camera/terms"
+								element={<GpsMapCameraTerms />}
 							/>
 
 							{/* Screenshot Pro */}

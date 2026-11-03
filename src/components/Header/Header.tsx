@@ -43,6 +43,10 @@ const apps = [
 		path: "/notification-history",
 	},
 	{
+		name: "GPS Map Camera",
+		path: "/gps-map-camera",
+	},
+	{
 		name: "QR & Barcode Scanner",
 		path: "/barcode",
 	},

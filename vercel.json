@@ -18,6 +18,12 @@
 			"destination": "/"
 		},
 		{ "source": "/notification-history/terms", "destination": "/" },
+		{ "source": "/gps-map-camera", "destination": "/" },
+		{
+			"source": "/gps-map-camera/privacy-policy",
+			"destination": "/"
+		},
+		{ "source": "/gps-map-camera/terms", "destination": "/" },
 		{
 			"source": "/battery-health-and-alarm",
 			"destination": "/"

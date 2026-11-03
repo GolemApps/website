@@ -6,6 +6,7 @@ import batteryIcon from "../../assets/battery.png";
 import walletIcon from "../../assets/wallet.png";
 import screenshotIcon from "../../assets/screenshot.png";
 import notificationHistoryIcon from "../../assets/wamr.png";
+import gpsMapCameraIcon from "../../assets/gps-map-camera.jpg";
 
 const apps = [
 	{
@@ -31,6 +32,12 @@ const apps = [
 		desc: "Track notification activity in one timeline and review recent alerts with privacy-first local storage.",
 		icon: notificationHistoryIcon,
 		link: "https://play.google.com/store/apps/details?id=com.golemapps.notificationHistory",
+	},
+	{
+		title: "GPS Map Camera",
+		desc: "Stamp photos with GPS coordinates, address, date, and map details for travel, fieldwork, and inspections.",
+		icon: gpsMapCameraIcon,
+		link: "https://play.google.com/store/apps/details?id=com.utilitysoftlabs.photoGps",
 	},
 	{
 		title: "QR Scanner from Image",
