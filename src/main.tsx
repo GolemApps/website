@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import Home from "./pages/Home/Home";
 import { theme } from "./theme";
 import { ThemeProvider, CssBaseline } from "@mui/material";
 
-// Bluetooth Tracker: Scan AirTag
+// Find Bluetooth Trackers
 import BluetoothTrackerPrivacyPolicy from "./pages/BluetoothTracker/PrivacyPolicy";
 import BluetoothTrackerTerms from "./pages/BluetoothTracker/Terms";
 
@@ -64,14 +64,22 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 						<Route element={<AppLayout />}>
 							<Route path="/" element={<Home />} />
 
-							{/* Bluetooth Tracker: Scan AirTag */}
+							{/* Find Bluetooth Trackers */}
 							<Route
-								path="/bluetooth-tracker-scan-airtag/privacy-policy"
+								path="/scan-tracker/privacy-policy"
 								element={<BluetoothTrackerPrivacyPolicy />}
 							/>
 							<Route
-								path="/bluetooth-tracker-scan-airtag/terms"
+								path="/scan-tracker/terms"
 								element={<BluetoothTrackerTerms />}
+							/>
+							<Route
+								path="/bluetooth-tracker-scan-airtag/privacy-policy"
+								element={<Navigate to="/scan-tracker/privacy-policy" replace />}
+							/>
+							<Route
+								path="/bluetooth-tracker-scan-airtag/terms"
+								element={<Navigate to="/scan-tracker/terms" replace />}
 							/>
 
 							{/* Battery Health & Alarm */}

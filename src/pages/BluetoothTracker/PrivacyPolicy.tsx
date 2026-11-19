@@ -6,21 +6,21 @@ const PrivacyPolicy: React.FC = () => {
 	return (
 		<>
 			<Helmet>
-				<title>Privacy Policy | Bluetooth Tracker: Scan AirTag</title>
-				<meta name="description" content="Privacy Policy for Bluetooth Tracker: Scan AirTag (com.utilitysoftlabs.scanairtag) by UtilitySoft Labs." />
+				<title>Privacy Policy | Find Bluetooth Trackers</title>
+				<meta name="description" content="Privacy Policy for Find Bluetooth Trackers (com.utilitysoftlabs.scantracker) by UtilitySoft Labs." />
 			</Helmet>
 			<Container maxWidth="md" sx={{ py: 4 }}>
 				<p>
 					<strong>Privacy Policy</strong>
 				</p>
 				<p>
-					This privacy policy is applicable to the Bluetooth Tracker: Scan AirTag app
+					This privacy policy is applicable to the Find Bluetooth Trackers app
 					(hereinafter referred to as "Application") for mobile devices, which
 					was developed by UtilitySoft Labs (hereinafter referred to as "Service
 					Provider") as an Ad Supported service. This service is provided "AS
 					IS".
 				</p>
-				<p>Package name: com.utilitysoftlabs.scanairtag</p>
+				<p>Package name: com.utilitysoftlabs.scantracker</p>
 				<p>
 					<strong>
 						What information does the Application obtain and how is it used?
@@ -71,25 +71,24 @@ const PrivacyPolicy: React.FC = () => {
 					</strong>
 				</p>
 				<p>
-					This Application does not gather precise information about the
-					location of your mobile device.
+					This Application may collect precise or approximate location
+					information of your mobile device when you grant location permission
+					and use scanning features. Location is used to show where nearby
+					Bluetooth trackers were detected on a map, to store detection history
+					with place context, and to power background alerts when the same
+					tracker appears near you in different places.
 				</p>
 				<p>
-					This Application collects your device's location, which helps the
-					Service Provider determine your approximate geographical location and
-					make use of in below ways:
+					The Application may also use location data in the following ways:
 				</p>
 				<p>
-					* &nbsp; Geolocation Services: The Service Provider utilizes location
-					data to provide features such as personalized content, relevant
-					recommendations, and location-based services.* &nbsp; Analytics and
-					Improvements: Aggregated and anonymized location data helps the
-					Service Provider to analyze user behavior, identify trends, and
-					improve the overall performance and functionality of the Application.*
-					&nbsp; Third-Party Services: Periodically, the Service Provider may
-					transmit anonymized location data to external services. These services
-					assist them in enhancing the Application and optimizing their
-					offerings.
+					* &nbsp; App features: map detections, movement/following alerts, and
+					related scanning tools.* &nbsp; Analytics and Improvements: Aggregated
+					and anonymized location data may help the Service Provider analyze
+					usage trends and improve the Application.* &nbsp; Third-Party
+					Services: Periodically, the Service Provider may transmit anonymized
+					location data to external services that help operate advertising,
+					analytics, crash reporting, or similar tooling described below.
 				</p>
 				<p>
 					<strong>
@@ -304,7 +303,7 @@ const PrivacyPolicy: React.FC = () => {
 					advised to consult this Privacy Policy regularly for any changes, as
 					continued use is deemed approval of all changes.
 				</p>
-				<p>This privacy policy is effective as of 2026-09-05</p>
+				<p>This privacy policy is effective as of 2026-11-19</p>
 				<p>
 					<strong>Your Consent</strong>
 				</p>

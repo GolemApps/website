@@ -6,8 +6,8 @@ const Terms: React.FC = () => {
 	return (
 		<>
 			<Helmet>
-				<title>Terms &amp; Conditions | Bluetooth Tracker: Scan AirTag</title>
-				<meta name="description" content="Terms &amp; Conditions for Bluetooth Tracker: Scan AirTag (com.utilitysoftlabs.scanairtag) by UtilitySoft Labs." />
+				<title>Terms &amp; Conditions | Find Bluetooth Trackers</title>
+				<meta name="description" content="Terms &amp; Conditions for Find Bluetooth Trackers (com.utilitysoftlabs.scantracker) by UtilitySoft Labs." />
 			</Helmet>
 
 			<Container maxWidth="md" sx={{ py: 4 }}>
@@ -16,12 +16,12 @@ const Terms: React.FC = () => {
 						<strong>Terms &amp; Conditions</strong>
 					</p>
 					<p>
-						These terms and conditions applies to the Bluetooth Tracker: Scan AirTag
+						These terms and conditions applies to the Find Bluetooth Trackers
 						app (hereby referred to as "Application") for mobile devices that
 						was created by UtilitySoft Labs (hereby referred to as "Service
 						Provider") as an Ad Supported service.
 					</p>
-					<p>Package name: com.utilitysoftlabs.scanairtag</p>
+					<p>Package name: com.utilitysoftlabs.scantracker</p>
 					<p>
 						Upon downloading or utilizing the Application, you are automatically
 						agreeing to the following terms. It is strongly advised that you
@@ -219,7 +219,7 @@ const Terms: React.FC = () => {
 						for any changes. The Service Provider will notify you of any changes
 						by posting the new Terms and Conditions on this page.
 					</p>
-					<p>These terms and conditions are effective as of 2026-09-05</p>
+					<p>These terms and conditions are effective as of 2026-11-19</p>
 					<p>
 						<strong>Contact Us</strong>
 					</p>
